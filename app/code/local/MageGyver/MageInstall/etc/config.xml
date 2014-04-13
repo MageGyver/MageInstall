@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <MageGyver_MageInstall>
+            <version>0.0.1</version>
+        </MageGyver_MageInstall>
+    </modules>
+   <global>
+         <models>
+            <mageinstall>
+                <class>MageGyver_MageInstall_Model</class>
+            </mageinstall>
+            <install>
+                <rewrite>
+                    <installer_db_mysql4>MageGyver_MageInstall_Model_Installer_Db_Mysql4</installer_db_mysql4>
+                </rewrite>
+            </install>
+        </models>
+    </global>
+    <install>
+        <databases>
+            <mysql4>
+                <extensions>
+                    <pdo_mysql>1</pdo_mysql>
+                </extensions>
+            </mysql4>
+        </databases>
+    </install>
+</config>
